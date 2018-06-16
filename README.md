@@ -1,6 +1,6 @@
 ## Single Page Application in Angular using ES6
 
-# The Single Page Application has below features:
+## The Single Page Application has below features:
 
 * Implement Javascript using Angular Framework
 * Build process of Gulp & Webpack Stream
@@ -11,29 +11,25 @@
 * User interface design uses BootStrap
 * Project developed on Github from scratch 
 
-###Running
+##Running
 
 ```
 git clone https://github.com/prateekdev92/spa-angular-es6.git
-
 ```
 
 ```
 npm install
-
 ```
 
 ```
 bower install
-
 ```
 
 ```
 gulp serve
-
 ```
 
-###Specification:
+##Specification:
 * Overview page:
 * Lists all customers
 * Add a new customer
