@@ -17,7 +17,7 @@ exports.config = {
 
   // Spec patterns are relative to the current working directory when
   // protractor is called.
-  specs: [paths.e2e + '/**/*.js'],
+  specs: [paths.src + '/app/components/**/*.spec.js'],
 
   // Options to be passed to Jasmine-node.
   jasmineNodeOpts: {
