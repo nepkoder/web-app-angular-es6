@@ -71,3 +71,7 @@ th {
   justify-content: flex-end;
   align-items: center;
 }
+
+.space-below{
+	margin-bottom: 15px;
+}
