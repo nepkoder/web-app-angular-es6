@@ -2,16 +2,16 @@
 
 ## Web Application has below features:
 
-* Implement Javascript using Angular Framework
-* Build process of Gulp & Webpack Stream
+* Implements JavaScript using Angular Framework
+* Build process of Gulp Babel & Webpack Stream
 * Latest Javascript ES6 standards
 * Supports RWD/Responsive Web Design
-* Cross Bowser suport
-* UI Router is used for Routing
+* Cross Bowser support
+* UI Router is used for Routing/Views
 * User interface design uses BootStrap
 * Project developed on Github from scratch 
 
-##Running
+## Running
 
 ```
 git clone https://github.com/prateekdev92/spa-angular-es6.git
@@ -29,7 +29,7 @@ bower install
 gulp serve
 ```
 
-##Specification:
+## Specification:
 * Overview page:
 * Lists all customers
 * Add a new customer
