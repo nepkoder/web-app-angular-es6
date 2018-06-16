@@ -1,6 +1,6 @@
 ## Single Page Application in Angular using ES6
 
-## The Single Page Application has below features:
+## Web Application has below features:
 
 * Implement Javascript using Angular Framework
 * Build process of Gulp & Webpack Stream
