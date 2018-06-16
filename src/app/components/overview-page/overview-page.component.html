@@ -35,7 +35,7 @@
             <td class="responsive-show-hide">{{data.birthday}}</td>
             <td class="responsive-show-hide">{{data.lastContact | date: 'medium'}}</td>
             <td><i ng-click="overviewCtrl.edit_customer(data.customerID)" class="clickable fa fa-2x fa-edit"></i></td>
-             <td><i ng-click="overviewCtrl.remove_customer(data)" class="clickable fa fa-2x fa-trash"></i></td>
+             <td><i ng-click="overviewCtrl.remove_customer(data.customerID)" class="clickable fa fa-2x fa-trash"></i></td>
           </tr>
           <tr ng-if="overviewCtrl.customerData.length==0" flex layout="row" layout-align="center center">
           	<td colspan="8" align="center"><h5>No Data</h5></td>

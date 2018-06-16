@@ -35,13 +35,19 @@ export class OverviewPageCtrl {
       $state.go('customer-detail-page', { customer_id: id });
     };
 
-    this.remove_customer = (data) => {
-      let idx = this.customerData.indexOf(data);
-      if (idx > -1) {
-        this.customerData.splice(idx, 1);
+    this.retun_new = (id,data) => {
+     if (id.customerID == this.current_del) {
+        this.customerData.splice(data, 1);
         let updated_data = JSON.stringify(this.customerData);
         localStorage.setItem("customer_data", updated_data);
       }
+    };
+
+    this.remove_customer = (data) => {
+
+    	this.current_del = data;
+      	this.customerData.map(this.retun_new);
+
     };
 
   }
