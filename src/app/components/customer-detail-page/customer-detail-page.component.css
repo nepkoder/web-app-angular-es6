@@ -1,3 +1,13 @@
-h2{
-	animation: bounceInLeft 1s;
+.customer-detail-container > h4{
+    font-weight: 400;
+    margin:20px;
+    animation: fadeIn 2s;
+}
+
+.customer-table{
+	animation: bounceInUp 1s;
+}
+
+.customer-detail-container button{
+	opacity: 0.9;
 }

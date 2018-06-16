@@ -6,7 +6,7 @@ import { CustomerDetailPageCtrl } from '../app/components/customer-detail-page/c
 import { CustomerDataService } from '../app/data/data.service';
 import { NavDirective } from '../app/components/navbar/navbar.directive';
 
-angular.module('customerManagement', ['ui.router', 'ngMaterial', 'toastr','angular-loading-bar'])
+angular.module('customerManagement', ['ui.router', 'toastr','angular-loading-bar','ui.bootstrap'])
   .constant('moment', moment)
   .config(config)
   .config(routerConfig)

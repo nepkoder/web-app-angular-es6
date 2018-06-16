@@ -1,0 +1,9 @@
+.nav > h4 {
+	margin-top: 10px;
+	font-weight: 200;
+	vertical-align: middle;
+}
+
+.nav > h4 > i {
+	vertical-align: middle;
+}

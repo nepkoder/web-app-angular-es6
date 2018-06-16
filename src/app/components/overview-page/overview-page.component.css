@@ -1,0 +1,18 @@
+.overview-container{
+	padding: 10px
+}
+
+.overview-container  h4{
+    font-weight: 400;
+    margin:20px;
+     animation: fadeIn 2s;
+}
+
+.customer-table{
+	animation: bounceInUp 1s;
+}
+
+.add-new-btn{
+	animation: bounceInRight 1s;
+	width:25% !important;
+}

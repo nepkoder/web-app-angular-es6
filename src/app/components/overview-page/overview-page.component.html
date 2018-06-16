@@ -1,4 +1,47 @@
 <header>
-      <nav-directive></nav-directive>
+  <nav-directive></nav-directive>
 </header>
-<h2>{{overviewCtrl.init_screen}}</h2>
+<div class="overview-container">
+  <div class="row" align="center">
+    <div class="col-sm-6" align="left">
+      <h4><i class="fa fa-home"></i> <span class="spacer"></span> Overview Page</h4>
+    </div>
+    <div class="col-sm-6 element-center" align="right">
+      <button ui-sref="customer-detail-page({customer_id:'add'
+      })" class="btn-defualt form-control clickable add-new-btn">
+        Add New Profile
+      </button>
+    </div>
+    </div>
+    <div class="row" align="center">
+      <div class="col-sm-1"></div>
+      <div class="col-sm-10">
+        <table class="table table-striped customer-table">
+          <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th class="responsive-show-hide">Gender</th>
+            <th class="responsive-show-hide">Customer Lifetime Value</th>
+            <th class="responsive-show-hide">Birthday</th>
+            <th class="responsive-show-hide">Last Contact</th>
+            <th>Action</th>
+            <th>Remove</th>
+          </tr>
+          <tr ng-repeat="data in overviewCtrl.customerData track by $index" flex layout="row" layout-align="center center">
+            <td>{{data.customerID}}</td>
+            <td>{{overviewCtrl.getFullName(data.name.first,data.name.last)}}</td>
+            <td class="responsive-show-hide">{{overviewCtrl.getPresentableGender(data.gender)}}</td>
+            <td class="responsive-show-hide">{{data.customerLifetimeValue}}</td>
+            <td class="responsive-show-hide">{{data.birthday}}</td>
+            <td class="responsive-show-hide">{{data.lastContact | date: 'medium'}}</td>
+            <td><i ng-click="overviewCtrl.edit_customer(data.customerID)" class="clickable fa fa-2x fa-edit"></i></td>
+             <td><i ng-click="overviewCtrl.remove_customer(data)" class="clickable fa fa-2x fa-trash"></i></td>
+          </tr>
+          <tr ng-if="overviewCtrl.customerData.length==0" flex layout="row" layout-align="center center">
+          	<td colspan="8" align="center"><h5>No Data</h5></td>
+          </tr>
+        </table>
+      </div>
+      <div class="col-sm-1"></div>
+    </div>
+  </div>

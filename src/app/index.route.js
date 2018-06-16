@@ -8,7 +8,7 @@ export function routerConfig ($stateProvider, $urlRouterProvider) {
       controllerAs: 'overviewCtrl'
     })
     .state('customer-detail-page', {
-      url: '/customer-detail-page',
+      url: '/customer-detail-page/:customer_id/',
       templateUrl: 'app/components/customer-detail-page/customer-detail-page.component.html',
       controller: 'CustomerDetailPageCtrl',
       controllerAs: 'custPageCtrl'
